@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Show.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Show = () => {
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1500, // Animation duration in milliseconds
+    });
+}, []);
   // Array of URLs to your CodePens
   const codePenUrls = [
     "https://codepen.io/Sanju-Sazid/pen/yLWJzPj",
@@ -14,7 +22,7 @@ const Show = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#121920] text-white p-8">
+    <div className="min-h-screen bg-[#121920] text-white p-8" data-aos="zoom-in-up">
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold text-white">Beautiful and powerful Elements</h1>
         <p className="text-2xl font-bold text-[#3399FF]">Copy and Use the Elements</p>
