@@ -1,0 +1,74 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #171717;
+    height: 100px;
+    z-index: 1000; /* Ensure the navbar appears above the video */
+}
+
+.left {
+    position: relative;
+    width: 190px; /* Adjust as needed */
+    height: 120%; /* Adjust as needed */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.left img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    max-height: 250%; /* Maintains the aspect ratio */
+    width: auto;
+    height: auto;
+}
+
+.dropdown {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    color: white;
+    transition: color 0.3s ease; /* Smooth transition effect for color change */
+    width: 150px;
+    padding: 10px;
+}
+
+/* Add hover effect */
+.dropdown li:hover {
+    color: yellow; /* Change the color on hover */
+    border-radius: 30px;
+    transform: scaleX(1.2);
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add transition properties */
+.dropdowns {
+    position: fixed;
+    top: 100px; /* Adjust the top position to align with the bottom of the navbar */
+    left: 20px; /* Adjust the left position as needed */
+    z-index: 1000; /* Ensure the dropdown appears above other content */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.dropdowns.show {
+    opacity: 1;
+}
+
+
+.logo:hover{
+    transform: scale(1.16);
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+.elements:hover{
+    transform: scale(1.16);
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}

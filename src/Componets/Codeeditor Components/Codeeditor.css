@@ -1,0 +1,21 @@
+
+
+.editor-pane {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(30, 30, 30, 0.85);
+    overflow: auto;
+    animation: fadeIn 1s ease-in-out;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.CodeMirror {
+    flex: 1;    
+    height: 50vh;
+    
+}
+
+.CodeMirror-scroll {
+    background-color: rgba(30, 30, 30, 0.85);
+}
+
