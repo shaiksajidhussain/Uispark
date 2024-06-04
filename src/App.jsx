@@ -7,7 +7,12 @@ import Homehero from './Componets/Home Hero Components/Homehero'
 import CodeEditor from './Componets/Codeeditor Components/Codeeditor'
 import Afterhero from './Componets/Afterhero Components/Afterhero'
 import Show from './Componets/Show Components/Show'
+import Githubstart from './Componets/Githubstar Components/Githubstart'
+import Most from './Componets/Mostpopoular Components/Most'
 // import Footer from './Componets/Footer Components/Footer'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Footer from './Componets/Footer Components/Footer'
 
 const App = () => {
   return (
@@ -21,9 +26,12 @@ const App = () => {
 
     <Afterhero/>
     <Show/>
+    <Most/>
+    <Githubstart/>
+    
+    <Footer/>
     </div>  
     {/* <CodeEditor/> */}
-    {/* <Footer/> */}
     </div>
       <BrowserRouter>
       <Routes>
