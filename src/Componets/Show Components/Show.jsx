@@ -32,7 +32,7 @@ const Show = () => {
       <div className="container text-center" >
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
     {codePenUrls.map((url, index) => (
-      <div key={index} className="bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg overflow-hidden">
+      <div key={index} className="jelly-hover bg-gradient-to-b from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg overflow-hidden">
         <iframe
           height="300"
           style={{ width: '100%', overflow: 'hidden',borderRadius:'10px' }}

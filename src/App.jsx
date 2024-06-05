@@ -13,6 +13,7 @@ import Most from './Componets/Mostpopoular Components/Most'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from './Componets/Footer Components/Footer'
+import Infinitecarausel from './Componets/Infinite Carausel Components/Infinitecarausel'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
     <Show/>
     <Most/>
     <Githubstart/>
+    <Infinitecarausel/>
     
     <Footer/>
     </div>  

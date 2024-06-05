@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import "./Githubstart.css"
 
 
 
@@ -47,7 +48,7 @@ const Githubstart = () => {
             <h2 className="font-bold text-xl sm:text-3xl mb-1 text-[#9DFF1E]">
               Uispark Galaxy
             </h2>
-            <p className="text-lg text-gray-300">
+            <p className="tracking-in-expand text-lg text-gray-300">
               The largest Open-Source UI Library !
             </p>
             <a
