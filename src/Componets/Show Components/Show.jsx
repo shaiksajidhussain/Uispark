@@ -13,12 +13,18 @@ const Show = () => {
   const codePenUrls = [
     "https://codepen.io/Sanju-Sazid/pen/yLWJzPj",
     "https://codepen.io/Sanju-Sazid/pen/MWdmjOZ",
-    "https://codepen.io/Sanju-Sazid/pen/LYoyRQp",
+    "https://codepen.io/Sanju-Sazid/pen/BaemeYp",
+
     "https://codepen.io/Sanju-Sazid/pen/MWdmjxd",
     "https://codepen.io/Sanju-Sazid/pen/BaeRYWq",
     "https://codepen.io/Sanju-Sazid/pen/PovmQmB",
     "https://codepen.io/Sanju-Sazid/pen/JjqNpJW",
     "https://codepen.io/Sanju-Sazid/pen/jOomZdE",
+    "https://codepen.io/Sanju-Sazid/pen/QWRORrO",
+    "https://codepen.io/Sanju-Sazid/pen/LYoyRQp",
+    "https://codepen.io/Sanju-Sazid/pen/vYwWwVL",
+    "https://codepen.io/Sanju-Sazid/pen/zYQPQQQ",
+
     
 
   ];

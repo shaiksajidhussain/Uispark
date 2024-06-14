@@ -8,13 +8,18 @@ const Navbar = () => {
         setIsDropdownVisible(!isDropdownVisible);
     };
 
+    const leaveDropdown = () => {
+        setIsDropdownVisible(false);
+    };
+
     return (
         <>
             <div className="navbar">
                 <div className="left">
-                    <img className='logo cursor-pointer'
+                    <img
+                        className='logo cursor-pointer'
                         src="https://res.cloudinary.com/defsu5bfc/image/upload/v1717312533/U__7_-removebg-preview_mlasct.png"
-                        alt="Logo" 
+                        alt="Logo"
                     />
                     <h1
                         className="elements text-white text-xl ml-5 mt-2 dropdown-toggle cursor-pointer"
@@ -25,7 +30,10 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className={`dropdowns cursor-pointer  flex ${isDropdownVisible ? 'show' : ''}`}>
+            <div
+                className={`dropdowns cursor-pointer flex ${isDropdownVisible ? 'show' : ''}`}
+                onMouseLeave={leaveDropdown}
+            >
                 <div className="firstdropdown ml-16">
                     <ul className="dropdown">
                         <li className='text-lg'>All</li>
