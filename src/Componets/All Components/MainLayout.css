@@ -1,0 +1,8 @@
+.magnify-hover {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .magnify-hover:hover {
+    transform: scale(1.2);
+  }

@@ -5,24 +5,25 @@
     width: 100%;
     background-color: #171717;
     height: 100px;
-    z-index: 1000; /* Ensure the navbar appears above the video */
+    z-index: 1000; /* Ensure the navbar appears above other content */
 }
 
 .left {
-    position: relative;
-    width: 190px; /* Adjust as needed */
-    height: 120%; /* Adjust as needed */
     display: flex;
-    justify-content: start;
     align-items: center;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 0 20px;
 }
 
-.left img {
-    max-width: 100%; /* Ensures the image fits within the container */
-    max-height: 250%; /* Maintains the aspect ratio */
-    width: auto;
+.logo {
     height: auto;
+    width: auto;
+    max-width: 190px; /* Adjust as needed */
+    max-height: 120px; /* Adjust as needed */
+}
+
+.elements {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .dropdown {
@@ -36,6 +37,7 @@
     transition: color 0.3s ease; /* Smooth transition effect for color change */
     width: 150px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* Add hover effect */
@@ -51,28 +53,33 @@
     position: fixed;
     top: 100px; /* Adjust the top position to align with the bottom of the navbar */
     left: 20px; /* Adjust the left position as needed */
-    z-index: 1000; /* Ensure the dropdown appears above other content */
+    z-index: 999; /* Ensure the dropdown appears above other content */
     transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(23, 23, 23, 0.9);
     border-radius: 10px;
-    width: 30vw;
+    width: auto;
 }
 
 .dropdowns.show {
     opacity: 1;
+    visibility: visible;
 }
 
+.dropdowns {
+    opacity: 0;
+    visibility: hidden;
+}
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.16);
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-}
-.elements:hover{
-    transform: scale(1.16);
-    transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
+.elements:hover {
+    transform: scale(1.16);
+    transition: transform 0.2s ease;
+}
 
 /* Responsive styles for tablets */
 @media (max-width: 1325px) {
@@ -87,6 +94,7 @@
         padding: 15px; /* Increase padding for better touch targets */
     }
 }
+
 @media (max-width: 768px) {
     .dropdowns {
         width: 55vw; /* Adjust the width for tablet view */
