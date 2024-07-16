@@ -38,26 +38,26 @@ const Navbar = () => {
                 className={`dropdowns cursor-pointer flex ${isDropdownVisible ? 'show' : ''}`}
                 onMouseLeave={leaveDropdown}
             >
-                <div className="firstdropdown ml-16">
-                    <ul className="dropdown">
-                        <li className='text-lg'>All</li>
-                        <li className='text-lg'>Buttons</li>
-                        <li className='text-lg'>Check Boxes</li>
-                        <li className='text-lg'>Switches</li>
-                        <li className='text-lg'>Cards</li>
-                        <li className='text-lg'>Forms</li>
-                    </ul>
-                </div>
-                <div className="thirddropdown ml-16">
-                    <ul className="dropdown">
-                        <li className='text-lg'>Loaders</li>
-                        <li className='text-lg'>Dropdowns</li>
-                        <li className='text-lg'>Carousel</li>
-                        <li className='text-lg'>Modal</li>
-                        <li className='text-lg'>Sidebar</li>
-                        <li className='text-lg'>Tooltip</li>
-                    </ul>
-                </div>
+   <div className="firstdropdown ml-16">
+    <ul className="dropdown">
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>All</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Buttons</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline'><li className='text-lg'>Check Boxes</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Switches</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Cards</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Forms</li></Link>
+    </ul>
+</div>
+<div className="thirddropdown ml-16">
+    <ul className="dropdown">
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Loaders</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Dropdowns</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Carousel</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Modal</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Sidebar</li></Link>
+        <Link to="/main" className='text-white hover:text-yellow-500 no-underline' ><li className='text-lg'>Tooltip</li></Link>
+    </ul>
+</div>
             </div>
         </>
     );

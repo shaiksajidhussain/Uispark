@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Sidebar from './UIElementsPage';
 import './MainLayout.css'; // Import the CSS file
+import HelmetSetup from '../SEO/HelmetSetup';
 
 const MainLayout = () => {
   const [elements, setElements] = useState(elementsData);
@@ -72,6 +73,14 @@ const MainLayout = () => {
   const totalPages = Math.ceil(elements.length / elementsPerPage);
 
   return (
+    <>
+
+<HelmetSetup 
+        title="Uispark - 100+ UI Component Library"
+        description="Uispark is your comprehensive UI component library, featuring a wide array of ready-to-use buttons, forms, cards, checkboxes, switches, loaders, and input elements. Designed with HTML, CSS, Tailwind CSS, Bootstrap, and MUI, our components are perfect for elevating your project's design and functionality with minimal effort."
+        keywords="UI components, HTML UI elements, CSS components, Tailwind CSS, Bootstrap UI, Material UI components, UI design, interactive components, web design, front-end development, buttons, forms, cards, checkboxes, switches, loaders, input fields , cards , "
+    />
+    
     <div className="flex flex-col md:flex-row">
       <Sidebar />
       <div className="flex-1 bg-[#171717] text-white p-4">
@@ -130,11 +139,11 @@ const MainLayout = () => {
             Shuffle
           </button>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 md:w-10/12 lg:grid-cols-2 lg:w-12/12 gap-4 relative right-3 ">
           {currentElements.map(element => (
             <div 
               key={element.id} 
-              className="bg-[#202020] p-4 rounded shadow-gray-950 hover:shadow-lg "
+              className="bg-[#202020] p-4 rounded shadow-gray-950 hover:shadow-lg xl:mx-5  "
             >
               <iframe
                 height="420"
@@ -171,6 +180,8 @@ const MainLayout = () => {
         </div>
       </div>
     </div>
+    
+    </>
   );
 };
 

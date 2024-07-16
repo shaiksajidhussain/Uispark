@@ -14,12 +14,22 @@ import UIElementsPage from './Componets/All Components/UIElementsPage';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import MainLayout from './Componets/All Components/MainLayout';
+import HelmetSetup from './Componets/SEO/HelmetSetup';
 const App = () => {
     React.useEffect(() => {
         AOS.init();
     }, []);
 
     return (
+        <>
+               <div>
+            <HelmetSetup 
+        title="Uispark - 100+ UI Component Library"
+        description="Uispark is your comprehensive UI component library, featuring a wide array of ready-to-use buttons, forms, cards, checkboxes, switches, loaders, and input elements. Designed with HTML, CSS, Tailwind CSS, Bootstrap, and MUI, our components are perfect for elevating your project's design and functionality with minimal effort."
+        keywords="UI components, HTML UI elements, CSS components, Tailwind CSS, Bootstrap UI, Material UI components, UI design, interactive components, web design, front-end development, buttons, forms, cards, checkboxes, switches, loaders, input fields , cards , "
+    />
+
+        </div>
         <BrowserRouter>
             <div>
                 <Navbar />
@@ -42,6 +52,7 @@ const App = () => {
                 </div>
             </div>
         </BrowserRouter>
+        </>
     );
 };
 
