@@ -56,7 +56,7 @@ const Afterhero = () => {
                     <div className="flex items-center justify-center mb-4">
                         <span className="text-blue-400 text-2xl cursor-pointer transition-transform transform hover:scale-125 duration-300" style={glowStyle}>📄</span>
                     </div>
-                    <h3 className="text font-semibold mb-2">Unrivaled documentation</h3>
+                    <h3 className="text-base font-semibold mb-2">Unrivaled documentation</h3>
                     <p className='text-base font-light'>The answer to your problem can be found in our documentation. How can we be so sure? Because our docs boast over 2,000 contributors.</p>
                 </div>
                     </div>
