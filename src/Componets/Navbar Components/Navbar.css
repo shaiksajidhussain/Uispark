@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #171717;
+    background-color: #000000;
     height: 100px;
     z-index: 1000; /* Ensure the navbar appears above other content */
 }

@@ -21,7 +21,7 @@ const Navbar = () => {
 
                     <img
                         className='logo cursor-pointer mb-1  '
-                        src="https://res.cloudinary.com/defsu5bfc/image/upload/v1717312533/U__7_-removebg-preview_mlasct.png"
+                        src="https://res.cloudinary.com/dknjrobkx/image/upload/v1767180163/62fcd57c-8f92-447d-ba38-90e6df9c55af.png"
                         alt="Logo"
                     />
                     </Link>

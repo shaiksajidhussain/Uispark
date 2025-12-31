@@ -24,7 +24,7 @@
     "react-icons": "^5.2.1",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.23.1",
-    "react-syntax-highlighter": "^15.5.0",
+    "react-syntax-highlighter": "^16.1.0",
     "react-typed": "^2.0.12",
     "react-typewriter-effect": "^1.1.0",
     "typewriter-effect": "^2.21.0"

@@ -23,7 +23,7 @@ const Homehero = () => {
     return (
         <div className="video-container" data-aos="flip-right">
             <video autoPlay muted loop id="bg-video">
-                <source src="https://res.cloudinary.com/defsu5bfc/video/upload/v1717327467/Blue_Animated_Earth_Day_Video_gpw8jw.mp4" type="video/mp4" />
+                <source src="https://cdn.pixabay.com/video/2019/08/15/26070-357512237_large.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="text-overlay">
